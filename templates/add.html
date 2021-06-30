@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+
+{% block title %} Add Employee{% endblock%}
+
+{% block body %}
+<section class="head">
+
+    <div class="text-center">
+        <h1> Employee Information </h1>
+     </div>
+    <form class="row g-3" action = "/savedetails" method="post">
+      <div class="col-auto" id="bg">
+
+            <table class="table table-hover " >
+            <tr ><td>Name</td><td><input type="text" name="name"></td></tr>
+            <tr ><td>Email</td><td><input type="email" name="email"></td></tr>
+            <tr><td>Address</td><td><input type="text" name="address"></td></tr>
+
+        </table>
+          <input type="submit" id="tc" class="btn  btn-secondary" value="Submit">
+      </div>
+    </form>
+
+</section>
+
+
+{% endblock%}
